@@ -1,0 +1,258 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	background-color: #eeeeee;
+}
+
+main {
+	flex: 1 0 auto;
+	background-color: white;
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+h3 {
+	margin: 15px 0;
+}
+
+.movie-card {
+	transition: 0.3s;
+	border: solid 2px white;
+	height: 300px; 
+	cursor: pointer;
+	border-radius: 10px; 
+}
+
+.movie-entry {
+	transition: 0.3s;
+	border: solid 2px white;
+}
+
+.movie-poster {
+	height: 296px;
+}
+
+.card.horizontal .card-image img {
+    border-radius: 8px 0 0 8px;
+}
+
+.movie-info {
+	padding: 15px;
+	border-bottom: solid 3px #ff9800;
+	height: 80%;
+}
+
+.movie-title {
+	margin: 0 0 20px 0;
+	color: #ff9800;
+}
+
+.rating-info {
+	text-align: center;
+}
+
+.rating-info img{
+	display: inline-block;
+	vertical-align: middle;
+	height: 25px;	
+}
+
+.rating-info img:nth-child(1){
+	padding-right:10px;
+}
+
+.rating-info div {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 25px;
+}
+
+.list-title {
+	font-weight: 500;
+	margin: 0;
+	color: #ff9800;
+	font-size: 20px;
+}
+
+.list-rating img{
+	display: inline-block;
+	vertical-align: bottom;
+	height: 20px;
+}
+
+.list-rating div {
+	display: inline-block;
+	vertical-align: bottom;
+	font-size: 17px;
+}
+
+.material-icons{
+    display: inline-flex;
+    vertical-align: top;
+}
+
+.search-btn{
+	display: inline-block; 
+	width: 40px; 
+	height: 40px; 
+	border-radius: 20px; 
+	vertical-align: middle;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.title {
+	margin: 0 15px;
+	padding: 20px 15px;
+	color: #ff9800;
+	font-weight: 600;
+	border-bottom: solid 1px #ff9800;
+}
+
+.description-box{
+	margin-top: 20px;
+	padding: 0 20px 10px 20px;
+	border: solid 1px #ff9800;
+	border-radius: 5px;
+	color: #808080;
+}
+
+.rating-box{
+	margin: 0;
+	border: solid 2px #ff9800;
+	border-radius: 3px;
+	height: 100px;
+}
+
+.rating-box img{
+	vertical-align: middle;
+	height: 50px;	
+}
+
+.rating-box div {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 55px;
+	text-align: center;
+	height: 100%;
+}
+
+.rating-box div:nth-child(2) {
+	color: white;
+	padding: 0
+}
+
+
+.info-box{
+	border: solid 2px #ff9800;
+	border-radius: 3px;
+	height: 50px;
+	font-size: 30px;
+}
+
+#studio-title{
+	padding: 0 10px;
+}
+
+.person-box{
+	border: solid 2px #ff9800;
+	border-radius: 3px;
+	height: 162px;
+	font-size: 30px;
+}
+
+.label-section{
+	background-color: #ff9800;
+	color: white;
+	padding: 8px 10px;
+}
+
+.label-section h6{
+	margin: 0;
+	font-size: 20px;
+}
+
+.person-box .list-rating img{
+	display: inline-block;
+	vertical-align: bottom;
+	height: 40px;
+}
+
+.person-box .list-rating div {
+	display: inline-block;
+	vertical-align: bottom;
+	font-size: 37px;
+}
+
+#actor-box .row{
+	margin-left: 5px;
+	border-bottom: solid 1px #ff9800;
+	width: 99%;
+	margin-bottom: 0;
+}
+
+#movies-box .row{
+	margin-left: 5px;
+	border-bottom: solid 1px #ff9800;
+	width: 99%;
+	margin-bottom: 0;
+}
+
+
+.movie-box{
+	border: solid 2px #ff9800;
+	border-radius: 3px;
+	height: 162px;
+	font-size: 30px;
+}
+
+
+.movie-box .list-rating img{
+	display: inline-block;
+	vertical-align: bottom;
+	height: 35px;
+}
+
+.movie-box .list-rating div {
+	display: inline-block;
+	vertical-align: bottom;
+	font-size: 33px;
+}
+
+.search-entry{
+	cursor: pointer; 
+	transition: 0.3s; 
+	border: solid 2px #fff;
+}
+
+.search-rating img{
+	display: inline-block;
+	vertical-align: bottom;
+	height: 28px;
+}
+
+.search-rating div {
+	display: inline-block;
+	vertical-align: bottom;
+	font-size: 25px;
+}
+
+.list-entry {
+	cursor: pointer;
+}
+
+.popup{
+	background-color: white; 
+	text-align: center;
+	font-size: 30px;
+	padding-top: 5px;
+	height: 60px; 
+	width: 600px; 
+	position: absolute; 
+	top: 1%; 
+	left: 50%; 
+	margin-left: -300px; 
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

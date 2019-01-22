@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../moviestars.css">
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!-- Script -->
+    <script src='../js/global.js'></script>
+    <script src='../js/theatre_info.js'></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <nav class="container" style="background-color: #ff9800">
+      <div class="nav-wrapper">
+        <a id='home-btn' href="#" class="brand-logo" style="padding: 0 15px; position: relative">
+          MovieStars<i class="material-icons" style="font-size: 40px; margin-right: 5px">stars</i>
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a id='nav-movie'>Movies</a></li>
+          <li><a id='nav-director'>Directors</a></li>
+          <li><a id='nav-actor'>Actors</a></li>
+          <li><a id='nav-theatre'>Theatres</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="container">
+    	<div class="row" style="border-bottom: solid 1px #ff9800">
+    		<div class="col s7 m7">
+	    		<h1 class='title' style="border: none"></h1>
+	    	</div>
+    		<div class="col s5 m5">
+    			<div class="row info-box" style="margin: 25px 10px 0 0; font-size: 40px; height:65px">
+    				<div class="col s6 m6" style="text-align: center; background-color: #ff9800; color: white; height: 63px;">
+						Location
+					</div>
+					<div id='location' class="col s6 m6">
+					</div>
+    			</div>
+    		</div>
+    	</div>
+		<div id='movies-list' class="row" style="padding: 20px 40px">
+		</div>
+    </main>
+    <footer class="page-footer container" style="background-color: #ff9800">
+      <div class="footer-copyright">
+        <div style="padding: 0 15px">
+          MovieStars 2018, KAIST CS360
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+  

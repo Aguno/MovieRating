@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../moviestars.css">
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!-- Script -->
+    <script src='../js/global.js'></script>
+    <script src='../js/movie_info.js'></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <nav class="container" style="background-color: #ff9800">
+      <div class="nav-wrapper">
+        <a id='home-btn' href="#" class="brand-logo" style="padding: 0 15px; position: relative">
+          MovieStars<i class="material-icons" style="font-size: 40px; margin-right: 5px">stars</i>
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a id='nav-movie'>Movies</a></li>
+          <li><a id='nav-director'>Directors</a></li>
+          <li><a id='nav-actor'>Actors</a></li>
+          <li><a id='nav-theatre'>Theatres</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="container">
+    	<h1 class='title'></h1>
+		<div class="row" style="padding: 20px 40px">
+			<div class='col s5 m5'>	
+				<img id='poster' style="width: 100%" src="">
+				<div class="description-box">
+					<h4 style="color: #ff9800; font-size: 25px"> Description</h4>
+					<p></p>
+				</div>
+			</div>
+			<div class="col s7 m7">
+				<div class="row">
+					<div class="col s8 m8" style="padding: 0">
+						<div class="rating-box" style="border-color: #f92e02; margin-bottom: 10px">
+							<div class="col s7 m7">
+								<img src="../img/712px-Rottentomatoesnewlogo.svg.png"/>
+			                </div>
+		                    <div class="col s5 m5" style="background-color: #f92e02;"> 
+		                    	<b id='rt-rating'></b>
+		                    </div>
+						</div>
+						<div class="rating-box" style="border-color: #f5c518">
+							<div class="col s7 m7">
+								<img style="height: 70px" src="../img/IMDB_Logo_2016.svg.png"/>
+			                </div>
+		                    <div class="col s5 m5" style="background-color: #f5c518;"> 
+		                    	<b id='mc-rating'></b>
+		                    </div>
+						</div>
+					</div>
+					<div class="col s4 m4" style="padding: 0">
+						<div style="margin: 0 5px; border: solid 2px #ff9800; border-radius: 3px; height: 210px">
+							<div style="height: 50%; padding: 5px; text-align: center; font-size: 30px; color: #ff9800; font-weight: bolder">
+								MovieStars</br>
+								Score
+							</div>
+							<div id='ms-score' style="height: 50%; background-color: #ff9800; color: white; font-size: 65px; text-align: center; font-weight: bolder">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row info-box">
+					<div class="col s3 m3" style="text-align: center; background-color: #ff9800; color: white; height: 48px;">
+						Studio
+					</div>
+					<div id='studio-title' class="col s9 m9">
+					</div>
+				</div>
+				<div class="row info-box">
+					<div class="col s3 m3" style="text-align: center; background-color: #ff9800; color: white; height: 48px;">
+						Genre
+					</div>
+					<div id='genre-title' class="col s9 m9">
+					</div>
+				</div>
+				<div class="row info-box">
+					<div class="col s5 m5" style="text-align: center; background-color: #ff9800; color: white; height: 48px;">
+						Release Date
+					</div>
+					<div id='release-date' class="col s7 m7">
+					</div>
+				</div>
+				<div id="director-box" class="row person-box">
+					<div class="label-section">
+						<h6> Director</h6>
+					</div>
+					<div id='director-info' class="list-entry">
+					</div>
+				</div>
+				<div class="row person-box" style="margin-bottom: 0; height: 407px">
+					<div id="actor-box">
+						<div class="label-section">
+							<h6> Actors</h6>
+						</div>
+						<div id='actors-list' style="height: 365px; overflow-y: scroll;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </main>
+    <footer class="page-footer container" style="background-color: #ff9800">
+      <div class="footer-copyright">
+        <div style="padding: 0 15px">
+          MovieStars 2018, KAIST CS360
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+  
